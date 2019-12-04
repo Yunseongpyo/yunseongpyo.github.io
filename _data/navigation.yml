@@ -1,7 +1,5 @@
 # main links
 main:
- - title: "블로그 블로그"
-     url: https://yunseongpyo.github.io
  - title: "About"
      url: /about/
   # - title: "Sample Collections"
