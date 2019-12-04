@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "블로그홈"
+    url: https://yunseongpyo.github.io/
   - title: "About"
     url: /about/
   # - title: "Sample Posts"
