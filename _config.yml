@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark"  # "default" # "air", "aqua", "contrast", "dar
 locale                   : "en-US"
 title                    : "Yun Seongpyo Blog"
 title_separator          : "Tech & Programming & Motion"
-subtitle                 : "Portfoilo & PersonWorks"
+subtitle                 : "Portfoilo & Individual Works"
 name                     : "Yun Seong Pyo"
 description              : # "An amazing website."
 url                      : "https://yunseongpyo.github.io"
@@ -108,14 +108,14 @@ analytics:
 # Site Author
 author:
   name             : "YunSeongpyo"
-  avatar           : "/assets/images/logo.png"
+  avatar           : "/assets/images/logo(1X1).png"
   bio              : "C~~~~~~~~oding"
   location         : "South Korea"
   email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:yyddp2@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
