@@ -3,9 +3,10 @@ title:  "Unity를 이용한 OpenCV"
 excerpt: "그날그날 공부한거 정리-01."
 
 categories:
-  - Blog
+  - Unity
 tags:
-  - Blog
+  - Unity
+  - OpenCV
 last_modified_at: 2019-12-19
 ---
 
