@@ -1,13 +1,14 @@
 # main links
 main:
-  - title: "HOME"
+  - title: "Home"
     url: https://yunseongpyo.github.io/
   - title: "Categories"
     url: /categories/
-  - title: "About"
-    url: /about/
   - title: "Unity"
     url: /categories/Unity/
+  - title: "About"
+    url: /about/
+  
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
