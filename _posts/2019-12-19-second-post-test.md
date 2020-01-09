@@ -2,6 +2,10 @@
 title:  "Unity를 이용한 OpenCV"
 excerpt: "그날그날 공부한거 정리-01."
 
+toc: true
+
+toc_sticky: true
+
 categories:
   - Unity
 tags:
@@ -10,7 +14,7 @@ tags:
 last_modified_at: 2019-12-19
 ---
 
-opencv for unity 사용시
+## 1. opencv for unity 사용시
 
 ```c#
 using OpenCVForUnity.CoreModule;
