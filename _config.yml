@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark"  # "default" # "air", "aqua", "contrast", "dar
 # Site Settings
 locale                   : "en-US"
 title                    : "Yun Seongpyo Blog"
-title_separator          : "Tech & Programming & Motion"
+title_separator          : "Programming & Motion"
 subtitle                 : "Portfoilo & Individual Works"
 name                     : "Yun Seong Pyo"
 description              : # "An amazing website."
