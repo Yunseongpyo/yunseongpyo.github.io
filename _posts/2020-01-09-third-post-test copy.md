@@ -25,21 +25,21 @@ last_modified_at: 2019-12-19
 
 - arSessionOrigin.MakeContentAppearAt : 유니티 상의 모든 중심점을 이동 시킬 때 사용(터치로 이동 가능), 즉 기준점을 이동 시킨다. 단 유니티 씬 상의 개별 오븍제트의 위치는 그대로
 
-- TrackableType의 종류 
+- TrackableType의 종류   
 TrackableType.PlaneWithinPolygon(지정된 평면 모양대로) < TrackableType.PlaneWithinBounds(지정된 평면모양기준으로 직사각형) 
 < TrackableType.PlaneEstimated(불분명한 경계) < TrackableType.PlaneWithinInfinity(지정된 면으로부터 끝이없는 경계선)
 
-- ARplane 타입 종류
-ARPlane a;
-a.alignment a= PlaneAlignment.HorizontalUp; // 수평 수직 확인
-a.center -> 유니티 월드 스페이스 상에서 중심
-a.boundary[0] - > 경계선 위치(배열로 저장)
-a.centerInPlaneSpace - > 평면 공간내에서 좌표 
-a.extents -> 감지한 평면을 감쌀수 있는 직사각형을 저장(가로 및 세로 값의 반값 입력)
-a.infinitePlane -> 무한 평면
-a.normal -> 평면이 바로보는 방향
-a.size -> 현실세상 사이즈 (ARSession 오브젝트하고 1:1 대응 시켜야 함)
-a.boundaryChanged -> 감지한 평면이 확장될때 자동으로 실행되는 이벤트
+- ARplane 타입 종류  
+ARPlane a;  
+a.alignment a= PlaneAlignment.HorizontalUp; // 수평 수직 확인  
+a.center -> 유니티 월드 스페이스 상에서 중심  
+a.boundary[0] - > 경계선 위치(배열로 저장)  
+a.centerInPlaneSpace - > 평면 공간내에서 좌표   
+a.extents -> 감지한 평면을 감쌀수 있는 직사각형을 저장(가로 및 세로 값의 반값 입력)  
+a.infinitePlane -> 무한 평면  
+a.normal -> 평면이 바로보는 방향  
+a.size -> 현실세상 사이즈 (ARSession 오브젝트하고 1:1 대응 시켜야 함)  
+a.boundaryChanged -> 감지한 평면이 확장될때 자동으로 실행되는 이벤트  
 
 
 
