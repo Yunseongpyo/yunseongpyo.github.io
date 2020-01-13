@@ -4,6 +4,6 @@ layout: category
 permalink: /categories/Unity/
 author_profile: true
 taxonomy: 
-    - Unity
+    Unity
 ---
 Unity 모음
