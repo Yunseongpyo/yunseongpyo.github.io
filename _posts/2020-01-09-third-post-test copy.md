@@ -3,7 +3,7 @@ title:  "AR Foundation no.1"
 excerpt: "AR Foundation 정리."
 
 categories:
-  - AR
+  - Unity
 tags:
   - Unity
   - AR
