@@ -1,8 +1,8 @@
 ---
 title: "Unity"
-layout: categories
+layout: category
 permalink: /categories/Unity/
 author_profile: true
-taxonomy: Unity
+taxonomy: Unity, AR
 ---
 Unity 모음
