@@ -6,6 +6,8 @@ main:
     url: /categories/
   - title: "Unity"
     url: /categories/Unity/
+  - title: "MachineLearning"
+    url: /categories/MachineLearning/
   - title: "About"
     url: /about/
   
