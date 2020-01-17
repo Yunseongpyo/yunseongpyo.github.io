@@ -2,6 +2,10 @@
 title:  "AR Foundation no.1"
 excerpt: "AR Foundation 정리."
 
+toc: true
+toc_sticky: true
+
+
 categories:
   - Unity
 tags:
