@@ -36,33 +36,33 @@ last_modified_at: 2020-01-17
   - Regresiion : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
   예) Predicting fianl exam score based on time spent
 
-    X(Hours) | Y(Score)
-    :---------:|:--------:
-    10 | 90
-    9 | 80
-    3 | 50
-    2 | 30
+      X(Hours) | Y(Score)
+      :---------:|:--------:
+      10 | 90
+      9 | 80
+      3 | 50
+      2 | 30
   
   위의 테이블을 통해 다른 시간일 경구 점수 예상 가능(7시간 공부 하면 75점 정도로 예측)
   - Binary Classification : 두가지의 경우로 정답을 분류하는 방법
   예) Pass or Non-pass based on time spent
 
-    |X(Hours) | Y(Pass/Fail)|
-    |:---:|:---:|
-    |10 | P|
-    |9 | P|
-    |3 | F|
-    |2 | F|
+      |X(Hours) | Y(Pass/Fail)|
+      |:---:|:---:|
+      |10 | P|
+      |9 | P|
+      |3 | F|
+      |2 | F|
   
   - Multi-label Classification : 여러가지 경우로 정답을 분류하는 방법
   예) Letter grade(A, B, C, E, F) based on time spent
  
-    |X(Hours) | Y(Grade)|
-    |:---:|:---:|
-    |10 | A
-    |9 | B
-    |3 | D
-    |2 | F
+      |X(Hours) | Y(Grade)|
+      |:---:|:---:|
+      |10 | A
+      |9 | B
+      |3 | D
+      |2 | F
 
 ## 2. Unsupervised Learning(비지도학습)
 - 정답인 데이터를 제공하지 않고 오로지 주어진 데이터를 분류만 함
