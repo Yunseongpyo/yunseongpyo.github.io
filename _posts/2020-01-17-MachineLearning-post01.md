@@ -35,8 +35,15 @@ last_modified_at: 2020-01-17
 - 지도학습 분류
   - Regresiion : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
   예) Predicting fianl exam score based on time spent
+  값 | 의미 | 기본값
+  ---|:---:|---:
+  `static` | 유형(기준) 없음 / 배치 불가능 | `static`
+  `relative` | 요소 **자신**을 기준으로 배치 |
+  `absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+  `fixed` | **브라우저 창**을 기준으로 배치 |
+
   X(Hours) | Y(Score)
-  ---|:---:
+  ---------|:--------:
   10 | 90
   9 | 80
   3 | 50
@@ -52,12 +59,7 @@ last_modified_at: 2020-01-17
   |2 | F|
   - Multi-label Classification : 여러가지 경우로 정답을 분류하는 방법
   예) Letter grade(A, B, C, E, F) based on time spent
-    X(Hours) | Y(Grade) | 기본값
-  ---|:---:|---:
-  `static` | 유형(기준) 없음 / 배치 불가능 | `static`
-  `relative` | 요소 **자신**을 기준으로 배치 |
-  `absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
-  `fixed` | **브라우저 창**을 기준으로 배치 |
+ 
   |X(Hours) | Y(Grade)|
   |---|:---:|
   |10 | A
