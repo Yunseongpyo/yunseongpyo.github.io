@@ -19,7 +19,7 @@ last_modified_at: 2020-01-17
 > "Field of study that gives computers the ability to learn  
    without being explicitly programmed”   
                                    - Arthur Samuel (1959) -
-                                   
+
 - 기계학습이라는 뜻으로 컴퓨터가 학습할 수 있도록 알고리즘과 기술을 개발 하는 분야  
   즉 '데이터에서 법칙성(규칙)을 추출하는 통계적 방법' 임
 - 딥러닝 같은 경우는 머신러닝의 한부분으로 인간두뇌의 신경세포를 모방한 신경망 모델
@@ -33,7 +33,7 @@ last_modified_at: 2020-01-17
  2. Email spam filter : 스팸인지 아닌지 구별된 데이터로 스팸메일 구별
  3. Predicting exam score : 이전 시험공부 시간 대비 점수로 이루어진 데이터로 점수 예상
 - 지도학습 분류
- - 'Regresiion' : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
+ - `Regresiion` : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
     예) Predicting fianl exam score based on time spent
     |X(Hours) | Y(Score)|
     |---|:---:|
@@ -43,7 +43,7 @@ last_modified_at: 2020-01-17
     |2 | 30|
     위의 테이블을 통해 다른 시간일 경구 점수 예상 가능(7시간 공부 하면 75점 정도로 예측) 
 
- - 'Binary Classification' : 두가지의 경우로 정답을 분류하는 방법   
+ - `Binary Classification` : 두가지의 경우로 정답을 분류하는 방법   
    예) Pass or Non-pass based on time spent
    |X(Hours) | Y(Pass/Fail)|
    |---|:---:|
@@ -52,7 +52,7 @@ last_modified_at: 2020-01-17
    |3 | F|
    |2 | F|
 
- - 'Multi-label Classification' : 여러가지 경우로 정답을 분류하는 방법 
+ - `Multi-label Classification` : 여러가지 경우로 정답을 분류하는 방법 
    예) Letter grade(A, B, C, E, F) based on time spent 
    |X(Hours) | Y(Grade)|
    |---|:---:|
