@@ -35,15 +35,9 @@ last_modified_at: 2020-01-17
 - 지도학습 분류
   - Regresiion : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
   예) Predicting fianl exam score based on time spent
-  값 | 의미 | 기본값
-  ---|:---:|---:
-  `static` | 유형(기준) 없음 / 배치 불가능 | `static`
-  `relative` | 요소 **자신**을 기준으로 배치 |
-  `absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
-  `fixed` | **브라우저 창**을 기준으로 배치 |
 
   X(Hours) | Y(Score)
-  ---------|:--------:
+  :---------:|:--------:
   10 | 90
   9 | 80
   3 | 50
@@ -51,8 +45,9 @@ last_modified_at: 2020-01-17
   위의 테이블을 통해 다른 시간일 경구 점수 예상 가능(7시간 공부 하면 75점 정도로 예측)
   - Binary Classification : 두가지의 경우로 정답을 분류하는 방법
   예) Pass or Non-pass based on time spent
+
   |X(Hours) | Y(Pass/Fail)|
-  |---|:---:|
+  |:---:|:---:|
   |10 | P|
   |9 | P|
   |3 | F|
@@ -61,7 +56,7 @@ last_modified_at: 2020-01-17
   예) Letter grade(A, B, C, E, F) based on time spent
  
   |X(Hours) | Y(Grade)|
-  |---|:---:|
+  |:---:|:---:|
   |10 | A
   |9 | B
   |3 | D
@@ -74,14 +69,6 @@ last_modified_at: 2020-01-17
 ## 3. Reinforcement Learning(강화학습)
 - 반복 훈령을 통해 행동에 대한 보상을 기반으로 올바른 정답을 구하면 상점, 틀린답을 구하면 벌점을 주어 최상의 결과를 찾는 방법
 - Unity의 ML-Agent가 강화학습으로 구성
-
-
-  값 | 의미 | 기본값
-  ---|:---:|---:
-  `static` | 유형(기준) 없음 / 배치 불가능 | `static`
-  `relative` | 요소 **자신**을 기준으로 배치 |
-  `absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
-  `fixed` | **브라우저 창**을 기준으로 배치 |
 
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
