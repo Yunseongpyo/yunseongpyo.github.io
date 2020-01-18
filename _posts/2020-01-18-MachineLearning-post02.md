@@ -56,16 +56,16 @@ TensorFlow 및 기타
 **텐서(Tensor)**
 - 내부적으로 모든 데이터는 텐서를 통해 표현. 텐서는 일종의 다차원 배열로 그래프 내의 오퍼레이션 간에는 텐서만이 전달. *즉 모든것은 Tensor만으로 전달 및 사용*
 - 구조
-  - Ranks
+  - Rank
     - TensorFlow에서는 tesnor는 rank라는 차원 단위로 표현
 
     Rank | Math Enitiy | Python Example
     -----|---------|--------
     0 | Scalar(magnitude only) | s = 483
     1 | Vector(magnitude and direction) | v = [1.1, 2.2, 3.3]
-    2 | Matrix(table of numbers) | m = [[1,2,3],[4,5,6],[7,8,9]]
+    2 | Matrix(table of numbers) | m = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
     3 | 3-Tensor(cube if numbers) | t = [[[2],[4],[6]], [[8],[10],[12]], [[14],[16], [18]]]
-    n | n-Tensor(you get the idea) | .....
+    n | n-Tensor(you get the idea) | ...
 
     - rank2인 tensor는 행렬, rank1인 tensor는 벡터로 보면 된다.
     - rank2인 tensor는 t[i,j] 형식으로 원소에 접근 가능하다
@@ -75,6 +75,17 @@ TensorFlow 및 기타
     t = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     ~~~
     - 위의 예제 같은 경우 rank2에 속하고, t[3,3]으로 표현 가능하다.
+
+  - Shape
+    - Tesnfor 차원을 표현할 때 세가지 기호를 사용
+
+    Rank | Shape | Dimension number | Python Example
+    -----|-------|--------|------
+    0 | [] | 0-D | A 0-D tensor A scalar
+    1 | [D0] | 1-D | A 1-D tensor with shape[5]
+    2 | [D0, D1] | 2-D | A 2-D tensor shape[3, 4]
+    3 | [D0, D1, D2] | 3-D | A 2-D tensor shape[1, 3, 4]
+    n | [D0, D1, ... , Dn-1] | n-D | A tensor with shape [D0, D1,...,Dn-1]
     
 
 **세션(Session)**
