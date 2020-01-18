@@ -1,8 +1,8 @@
 ---
-title: "Unity"
+title: "MachineLearning"
 layout: category
 permalink: /categories/MachineLearning/
 author_profile: true
-taxonomy: Machine Learning
+taxonomy: MachineLearning
 ---
 Machine Learning 모음
