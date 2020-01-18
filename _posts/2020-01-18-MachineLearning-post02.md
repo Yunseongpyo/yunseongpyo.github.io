@@ -30,7 +30,9 @@ TensorFlow 및 기타
 
 ## 1. 데이터 플로우 그래프
 - 수학 계산과 데이터의 흐름을 노드(Node)와 엣지(Edge)를 사용한 방향 그래프(Directed Graph)로 표현
+
 ![data flow graph](https://www.tensorflow.org/images/tensors_flowing.gif)
+
 - Node : 수학젹 계산, 데이터 입/출력, 그리고 데이터 읽기/저장 등의 작업 수행
 - Edge : Node들 간 데이터의 입출력 관계
 
