@@ -10,7 +10,7 @@ categories:
 tags:
   - MachineLearning
   - Python
-last_modified_at: 2020-01-17
+last_modified_at: 2020-01-18
 ---
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
@@ -27,7 +27,7 @@ TensorFlow 및 기타
 
 - 구글에서 만든 딥러닝 오픈소스 패키지
 - Tensor는 다양한 분야에서 조금씩 다른 의미로 씌이고 있지만 여기서는 '학습데이터가 저장되는 다차원 배열'로 정의
-- 데이터 플로우 그래프(Data Flow Graph) 방식 사용
+- 데이터 플로우 그래프(Data Flow Graph)로 연산을 나타내는 프로그래밍 시스템
 
 ## 1. 데이터 플로우 그래프
 - 수학 계산과 데이터의 흐름을 노드(Node)와 엣지(Edge)를 사용한 방향 그래프(Directed Graph)로 표현
@@ -49,18 +49,38 @@ TensorFlow 및 기타
 ---
 
 # 2. 기본 개념 
-## 용어
+## 1.용어
 **오퍼레이션(Operation)**
 - 그래프 상의 노드는 오퍼레이션(줄임말 op)으로 불림. 오퍼레이션은 하나 이상의 텐서를 받을 수 있고, 계산을 수행하고, 결과를 하나 이상의 텐서로 반환할 수 있음.
 
 **텐서(Tensor)**
-- 내부적으로 모든 데이터는 텐서를 통해 표현. 텐서는 일종의 다차원 배열로 그래프 내의 오퍼레이션 간에는 텐서만이 전달.
+- 내부적으로 모든 데이터는 텐서를 통해 표현. 텐서는 일종의 다차원 배열로 그래프 내의 오퍼레이션 간에는 텐서만이 전달. *즉 모든것은 Tensor만으로 전달 및 사용*
+- 구조
+  - Ranks
+    - TensorFlow에서는 tesnor는 rank라는 차원 단위로 표현
+
+    Rank | Math Enitiy | Python Example
+    -----|---------|--------
+    0 | Scalar(magnitude only) | s = 483
+    1 | Vector(magnitude and direction) | v = [1.1, 2.2, 3.3]
+    2 | Matrix(table of numbers) | m = [[1,2,3],[4,5,6],[7,8,9]]
+    3 | 3-Tensor(cube if numbers) | t = [[[2],[4],[6]], [[8],[10],[12]], [[14],[16], [18]]]
+    n | n-Tensor(you get the idea) | .....
+
 
 **세션(Session)**
 - 오퍼레이션의 실행 환경을 캡슐화
+- 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
 
   출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
+## 2. 연산과정
+  ### 1.Construction Phase(구성단계)
+    - 텐서플로우 op를 통해 그래프 빌드, 즉 그래프를 조립
+    - 단순히 연산을 위해 그래프를 표현해 놓는 과정, 실행을 위해 Session 필요
 
+  ### 2.Execution Phase(실행단계)
+    - Session을 이용해 그래프의 op 실행
+    - Session은 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
 ---
 
 # 3. 기본 코드 예제
