@@ -157,7 +157,6 @@ node3:  Tensor("Add:0", shape=(), dtype=float32)
 ~~~
   - session에 그래프를 넣지 않았기 때문에 출력값은 단지 그래프 값만 표시됨 
   - 연산을 위해서는 sesseion을 추가해야 함
-
 ~~~python
 sess = tf.Session() #session을 sess로 선언
 print("sess.run(node1, node2): ", sess.run([node1, node2])) # run 함수를 통해 그래프 실행
