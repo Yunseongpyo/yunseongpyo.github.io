@@ -21,6 +21,7 @@ TensorFlow 및 기타
 3. 값 업데이트 및 출력값 리턴
 
 ---
+
 # 1. TensorFlow란?
 > TensorFlow는 머신러닝을 위한 엔드 투 엔드 오픈소스 플랫폼입니다. 도구, 라이브러리, 커뮤니티 리소스로 구성된 포괄적이고 유연한 생태계를 통해 연구원들은 ML에서 첨단 기술을 구현할 수 있고 개발자들은 ML이 접목된 애플리케이션을 손쉽게 빌드 및 배포할 수 있습니다.       - [출처:텐서플로우 공식 홈페이지](https://www.tensorflow.org/?hl=ko) -
 
@@ -43,8 +44,10 @@ TensorFlow 및 기타
 - 계산 구조와 목표함수만 정의하면 자동으로 미분계산 처리
 - Python/C++ 지원, [SWIG](https://ko.wikipedia.org/wiki/SWIG)를 통해 다양한 언어 지원 가능
 
-출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
+  출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
+
 ---
+
 # 2. 기본 개념 
 ## 1. 용어
 **오퍼레이션(Operation)**
@@ -56,8 +59,9 @@ TensorFlow 및 기타
 **세션(Session)**
 - 오퍼레이션의 실행 환경을 캡슐화
 
-출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
+  출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
 
+---
 
 # 3. 기본 코드 예제
 
@@ -83,6 +87,8 @@ b'Hello, TensorFlow!'
 ~~~
   - 결과값에 b가 나오는 이유 [링크](https://stackoverflow.com/questions/6269765/what-does-the-b-character-do-in-front-of-a-string-literal)
 
+- Computational Graph
+~~~ python
 
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
