@@ -14,12 +14,6 @@ last_modified_at: 2020-01-18
 ---
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
-TensorFlow 및 기타 
-
-1. 그래프 빌드(PlaceHolder) - 노드 만들기 설계
-2. 그래프 실행
-3. 값 업데이트 및 출력값 리턴
-
 ---
 
 # 1. TensorFlow란?
@@ -158,15 +152,36 @@ node3:  Tensor("Add:0", shape=(), dtype=float32)
   - session에 그래프를 넣지 않았기 때문에 출력값은 단지 그래프 값만 표시됨 
   - 연산을 위해서는 sesseion을 추가해야 함
 
-~~~python
-sess = tf.Session() #session을 sess로 선언
-print("sess.run(node1, node2): ", sess.run([node1, node2])) # run 함수를 통해 그래프 실행
-print("sess.run(node3): ", sess.run(node3))
-~~~
-~~~bash
-sess.run(node1, node2):  [3.0, 4.0]
-sess.run(node3):  7.0
-~~~
+  ~~~python
+  sess = tf.Session() #session을 sess로 선언
+  print("sess.run(node1, node2): ", sess.run([node1, node2])) # run 함수를 통해 그래프 실행
+  print("sess.run(node3): ", sess.run(node3))
+  ~~~
+  ~~~bash
+  sess.run(node1, node2):  [3.0, 4.0]
+  sess.run(node3):  7.0
+  ~~~
+
+- Placeholder
+  - 레이지 기법으로 값을 미리 정하지 않고, 프로그래밍이 돌아가는 시점에 정해지는 값
+  - 변수의 형태(type)만 정해 놓고, 변수의 값은 정해지지 않았지만 텐서플로우가 실행되는 동안에 정해짐
+  - 값이 미리 정해지지 않고, 나중에 정해지는 점은 굉장히 유연한 프로그래밍을 할 수 있게 도와줌
+  ~~~python
+  a = tf.placeholder(tf.float32)
+  b = tf.placeholder(tf.float32)
+  adder_node = a + b  # + provides a shortcut for tf.add(a, b)
+  print(sess.run(adder_node, feed_dict={a: 3, b: 4.5}))
+  print(sess.run(adder_node, feed_dict={a: [1,3], b: [2, 4]}))
+  ~~~
+  ~~~bash
+  7.5
+  [ 3.  7.]
+  ~~~
+  - feed_dict={값} 문법은 run function에서 argument로 받는 특정 이름을 지칭하는 것
+  - 자바 같은 경우, argument 순서에 의해서 전달되는 파라미터가 어떤 argument에 매칭될지가 정해지는데,   
+    파이썬에서는 argument이름을 정해줌으로써 순서에 상관 없이 파라미터를 전달 할 수 있는 장점이 있음
+
+
 
 
 
