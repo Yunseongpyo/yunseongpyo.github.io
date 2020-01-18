@@ -67,6 +67,15 @@ TensorFlow 및 기타
     3 | 3-Tensor(cube if numbers) | t = [[[2],[4],[6]], [[8],[10],[12]], [[14],[16], [18]]]
     n | n-Tensor(you get the idea) | .....
 
+    - rank2인 tensor는 행렬, rank1인 tensor는 벡터로 보면 된다.
+    - rank2인 tensor는 t[i,j] 형식으로 원소에 접근 가능하다
+    - rank3인 tensor는 t[i,j,k] 형식으로 원소를 지정할 수 있다.
+    
+    ~~~bash
+    t = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    ~~~
+    - 위의 예제 같은 경우 rank2에 속하고, t[3,3]으로 표현 가능하다.
+    
 
 **세션(Session)**
 - 오퍼레이션의 실행 환경을 캡슐화
