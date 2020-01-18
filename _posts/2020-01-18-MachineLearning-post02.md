@@ -87,12 +87,27 @@ TensorFlow 및 기타
     3 | [D0, D1, D2] | 3-D | A 2-D tensor shape[1, 3, 4]
     n | [D0, D1, ... , Dn-1] | n-D | A tensor with shape [D0, D1,...,Dn-1]
     
+  - Data types
+    - Tensor는 차원 말고도 데이터 타입도 갖는다.
 
+    Data type | Python tpye | Description
+    -----|---------|--------
+    DT_FLOAT | tf.float32 | 32비트 부동 소수
+    DT_DOUBLE | tf.float64 | 64비트 부동 소수
+    DT_INT8 | tf.int8 | 8비트 부호 있는 정수
+    DT_INT16 | tf.int16 | 16비트 부호 있는 정수
+    DT_INT32 | tf.int32 | 32비트 부호 있는 정수
+    DT_INT64 | tf.int64 | 64비트 부호 있는 정수
+
+    ...
+
+    
 **세션(Session)**
 - 오퍼레이션의 실행 환경을 캡슐화
 - 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
 
   출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
+
 ## 2. 연산과정
   ### 1.Construction Phase(구성단계)
     - 텐서플로우 op를 통해 그래프 빌드, 즉 그래프를 조립
