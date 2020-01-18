@@ -101,7 +101,7 @@ TensorFlow 및 기타
 
     ...
 
-    
+
 **세션(Session)**
 - 오퍼레이션의 실행 환경을 캡슐화
 - 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
@@ -116,6 +116,7 @@ TensorFlow 및 기타
   ### 2.Execution Phase(실행단계)
     - Session을 이용해 그래프의 op 실행
     - Session은 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
+
 ---
 
 # 3. 기본 코드 예제
@@ -143,7 +144,31 @@ b'Hello, TensorFlow!'
   - 결과값에 b가 나오는 이유 [링크](https://stackoverflow.com/questions/6269765/what-does-the-b-character-do-in-front-of-a-string-literal)
 
 - Computational Graph
-~~~ python
+~~~python
+node1 = tf.constant(3.0, tf.float32)
+node2 = tf.constant(4.0) # also tf.float32 implicitly
+node3 = tf.add(node1, node2)
+
+print("node1:", node1, "node2:", node2)
+print("node3: ", node3)
+~~~
+~~~bash
+node1: Tensor("Const_1:0", shape=(), dtype=float32) node2: Tensor("Const_2:0", shape=(), dtype=float32)
+node3:  Tensor("Add:0", shape=(), dtype=float32)
+~~~
+- session에 그래프를 넣지 않았기 때문에 출력값은 단지 그래프 값만 표시됨 
+- 연산을 위해서는 sesseion을 추가해야 함
+
+~~~python
+sess = tf.Session() #session을 sess로 선언
+print("sess.run(node1, node2): ", sess.run([node1, node2])) # run 함수를 통해 그래프 실행
+print("sess.run(node3): ", sess.run(node3))
+~~~
+~~~bash
+sess.run(node1, node2):  [3.0, 4.0]
+sess.run(node3):  7.0
+~~~
+
 
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
