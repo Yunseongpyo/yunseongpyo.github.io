@@ -9,7 +9,6 @@ categories:
   - MachineLearning
 tags:
   - MachineLearning
-  - Python
 last_modified_at: 2020-01-17
 ---
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
