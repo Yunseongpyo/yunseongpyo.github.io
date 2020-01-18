@@ -109,13 +109,13 @@ TensorFlow 및 기타
   출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
 
 ## 2. 연산과정
-  ### 1.Construction Phase(구성단계)
-    - 텐서플로우 op를 통해 그래프 빌드, 즉 그래프를 조립
-    - 단순히 연산을 위해 그래프를 표현해 놓는 과정, 실행을 위해 Session 필요
+### 1.Construction Phase(구성단계)
+  - 텐서플로우 op를 통해 그래프 빌드, 즉 그래프를 조립
+  - 단순히 연산을 위해 그래프를 표현해 놓는 과정, 실행을 위해 Session 필요
 
-  ### 2.Execution Phase(실행단계)
-    - Session을 이용해 그래프의 op 실행
-    - Session은 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
+### 2.Execution Phase(실행단계)
+  - Session을 이용해 그래프의 op 실행
+  - Session은 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
 
 ---
 
@@ -148,7 +148,6 @@ b'Hello, TensorFlow!'
 node1 = tf.constant(3.0, tf.float32)
 node2 = tf.constant(4.0) # also tf.float32 implicitly
 node3 = tf.add(node1, node2)
-
 print("node1:", node1, "node2:", node2)
 print("node3: ", node3)
 ~~~
@@ -156,8 +155,8 @@ print("node3: ", node3)
 node1: Tensor("Const_1:0", shape=(), dtype=float32) node2: Tensor("Const_2:0", shape=(), dtype=float32)
 node3:  Tensor("Add:0", shape=(), dtype=float32)
 ~~~
-- session에 그래프를 넣지 않았기 때문에 출력값은 단지 그래프 값만 표시됨 
-- 연산을 위해서는 sesseion을 추가해야 함
+  - session에 그래프를 넣지 않았기 때문에 출력값은 단지 그래프 값만 표시됨 
+  - 연산을 위해서는 sesseion을 추가해야 함
 
 ~~~python
 sess = tf.Session() #session을 sess로 선언
