@@ -31,7 +31,7 @@ TensorFlow 및 기타
 ## 1. 데이터 플로우 그래프
 - 수학 계산과 데이터의 흐름을 노드(Node)와 엣지(Edge)를 사용한 방향 그래프(Directed Graph)로 표현
 
-![data flow graph](https://www.tensorflow.org/images/tensors_flowing.gif)
+  (https://www.tensorflow.org/images/tensors_flowing.gif)
 
 - Node : 수학젹 계산, 데이터 입/출력, 그리고 데이터 읽기/저장 등의 작업 수행
 - Edge : Node들 간 데이터의 입출력 관계
@@ -54,7 +54,7 @@ TensorFlow 및 기타
 - 내부적으로 모든 데이터는 텐서를 통해 표현. 텐서는 일종의 다차원 배열로 그래프 내의 오퍼레이션 간에는 텐서만이 전달.
 
 **세션(Session)**
-- 오퍼레이션의 실행 환경을 캡슐화 한 것
+- 오퍼레이션의 실행 환경을 캡슐화
 
 출처 : [텐서플로우시작하기](https://gist.github.com/haje01/202ac276bace4b25dd3f)
 
@@ -63,12 +63,13 @@ TensorFlow 및 기타
 
 - 텐서플로우 버전 확인
 ~~~ python
-import tensorflow as tf
-tf.__version__
+import tensorflow as tf # 텐서플로우 임포트
+tf.__version__ # 버전 확인
 ~~~
 ~~~bash
 '1.12.0'
 ~~~
+  - 깔린 텐서플로우 마다 결과값은 다르게 나옵니다.
 
 - Hello Tensor Flow! 출력하기
 ~~~ python
@@ -80,6 +81,6 @@ print(sess.run(hello))
 ~~~bash
 b'Hello, TensorFlow!'
 ~~~
-
+  - 
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
