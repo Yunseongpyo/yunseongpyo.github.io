@@ -1,5 +1,5 @@
 ---
-title:  "MachineLearning - 01"
+title:  "MachineLearning - 01.머신러닝이란?"
 excerpt: "MachineLearning 정리."
 
 toc: true

@@ -1,5 +1,5 @@
 ---
-title:  "MachineLearning - 02(Python)"
+title:  "MachineLearning - 02. 텐서플로우(Python)"
 excerpt: "MachineLearning 정리."
 
 toc: true
