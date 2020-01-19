@@ -183,6 +183,8 @@ node3:  Tensor("Add:0", shape=(), dtype=float32)
 
 
 
-
+$$
+\sqrt{3x-1}+(1+x)^2
+$$
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
