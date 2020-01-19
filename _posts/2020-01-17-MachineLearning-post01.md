@@ -32,7 +32,7 @@ last_modified_at: 2020-01-17
   1. Email spam filter : 스팸인지 아닌지 구별된 데이터로 스팸메일 구별
   1. Predicting exam score : 이전 시험공부 시간 대비 점수로 이루어진 데이터로 점수 예상
 - 지도학습 분류
-  - ==Regression== : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
+  - Regression : 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 방법  
   
   예) Predicting fianl exam score based on time spent
 
