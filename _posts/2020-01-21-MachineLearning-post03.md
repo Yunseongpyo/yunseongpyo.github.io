@@ -54,8 +54,5 @@ last_modified_at: 2020-01-21
 - 최종적으로 수식으로 표현했을 경우 위와 같이 표현된다.
 - **가장 Cost를 찾는 것이 Lnear Regression의 학습 목표** 
 
-최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
-
-[^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
