@@ -30,7 +30,7 @@ last_modified_at: 2020-01-21
 - 주어진 데이터에 맞는 선을 찾는 것이 학습이다
 - 주어진 데이터를 기준으로 Hypothesis(가설)을 세워야 한다.
 
-![Hypothesis](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression02.PNG?raw=true “Hypothesis”)
+  ![Hypothesis](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression02.PNG?raw=true “Hypothesis”)
 
 - 파란선을 기준으로 찾은 노란선과 빨간선이 Hypothesis이다
 - 수식적으로는 `H(x) = Wx +b` Hypothesis(가설) 정의
