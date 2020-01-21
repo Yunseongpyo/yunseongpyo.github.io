@@ -21,7 +21,7 @@ last_modified_at: 2020-01-21
  
 # 2. 학습 과정 
 예) Predicting fianl exam score based on time spent
-![Ex01](/assets/images\MachineLearning\03LinearRegression/LinearRegression01.png)
+![Ex01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression01.PNG?raw=true)
 
 ## 1. Hypothesis
 - 주어진 데이터에 맞는 선을 찾는 것이 학습이다
