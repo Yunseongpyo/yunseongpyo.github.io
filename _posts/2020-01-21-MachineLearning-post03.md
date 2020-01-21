@@ -18,7 +18,9 @@ last_modified_at: 2020-01-21
 # 1. Linear Regression(선형 회귀)
 - 연속적인 트레이닝 데이터에 기초해 정답을 추론하는 알고리즘
 - 주어진 데이터를 대표하는 하나의 직선을 찾는 방식(직선:회귀선, 함수: 회귀식) 
- 
+
+--- 
+
 # 2. 학습 과정 
 예) Predicting fianl exam score based on time spent
 ![Ex01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression01.PNG?raw=true)
