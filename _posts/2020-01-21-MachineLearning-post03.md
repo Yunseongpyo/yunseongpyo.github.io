@@ -38,7 +38,7 @@ last_modified_at: 2020-01-21
 
 ## 2.Cost Function(Lost Function)
 
-![CostFunction01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression04.PNG?raw=true)
+  ![CostFunction01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression04.PNG?raw=true)
 
 - 실제 데이터와 모델(가설)과의 거리를 비교하는 함수(거리측정)
 - 거리가 멀수록 학습이 잘못된 것이고, 거리가 가까울 수록 학습이 잘된 것이다.
