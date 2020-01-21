@@ -22,7 +22,7 @@ last_modified_at: 2020-01-21
 --- 
 
 # 2. 학습 과정 
-예) Predicting fianl exam score based on time spent
+예) 간단하게 표현한 Linear Regression
 
 ![Ex01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/03LinearRegression/LinearRegression01.PNG?raw=true)
 
