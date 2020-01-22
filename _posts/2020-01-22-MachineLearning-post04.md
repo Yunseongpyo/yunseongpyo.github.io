@@ -19,9 +19,10 @@ last_modified_at: 2020-01-22
   1. 그래프 빌드 : H(x) = Wx+b (Hypothesis), CostFunction, Cost Minimize 구현
   1. 학습 실행 및 학습 결과 프린트
 - 첫번째는 `placeholder` 없이 직접 데이터를 입력해 구현
-- 두번째는 `placeholder` 로 이용한 구현
+- 두번째는 `placeholder` 로 이용한 구현  
 
 
+---
 
 # 1. PlaceHolder없이 구현
 
@@ -133,7 +134,7 @@ for step in range(2001):
 2000 1.7575063e-05 [0.995131] [0.01106845]
 ~~~
 - cost 값은 계속 줄어들고, W는 1에 가까워 지고 b는 0에 가까워 진다.(h(x) = 1*x+0)
-- 즉 우리가 구하고자 한 y = x 에 가까워 진다.
+- 즉 우리가 구하고자 한 y = x 에 가까워 진다.  
 
 
 ---
