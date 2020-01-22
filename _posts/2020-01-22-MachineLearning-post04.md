@@ -10,7 +10,7 @@ categories:
 tags:
   - MachineLearning
   - Python
-last_modified_at: 2020-01-18
+last_modified_at: 2020-01-22
 ---
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
@@ -18,10 +18,11 @@ last_modified_at: 2020-01-18
 # Linerar Regression을 파이썬으로 구현
   1. 그래프 빌드 : H(x) = Wx+b (Hypothesis), CostFunction, Cost Minimize 구현
   1. 학습 실행 및 학습 결과 프린트
-- 첫번째는 placeholder 없이 직접 데이터를 입력해 구현
-- 두번째는 placeholder 로 이용한 구현
+- 첫번째는 `placeholder` 없이 직접 데이터를 입력해 구현
+- 두번째는 `placeholder` 로 이용한 구현
 
 # 1. PlaceHolder없이 구현
+___
 ## 1. 전체 코드
 ~~~python
 import tensorflow as tf
@@ -66,16 +67,17 @@ import tensorflow as tf
 x_train = [1,2,3]
 y_train = [1,2,3]
 ~~~
-- placeholders 없이 직접 정답인 데이터 입력
+- `placeholder`없이 직접 정답인 데이터 입력
+
 ~~~python
 #텐서플로우가 자체적으로 변경할 변수들
 w = tf.Variable(tf.random_normal([1], name='weight'))
 b = tf.Variable(tf.random_normal([1], name='bias'))
 ~~~
-- Variable 
+- `Variable`
   - 텐서플로우가 사용하는 변수(텐서플로우가 자체적으로 변경함)
   - 즉 학습 시키는데 사용될 변수를 텐스플로우가 변경
-- random_normal(shpae[], name = '')
+- `random_normal(shpae[], name = '')`
   - 랜덤값을 발생 시킴
   - shpaer값이 [1]이기 때문에 1개의 랜덤값 발생
 
@@ -90,9 +92,9 @@ cost = tf.reduce_mean(tf.square(hypothesis - y_train))
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
 train = optimizer.minimize(cost)
 ~~~
-- reduece_mean : 평균값 구하기
-- square : 제곱
-- GradientDescent 는 다음번 포스트에서 설명 우선은 cost의 최소값을 찾아내 준다고 생각
+- `reduece_mean` : 평균값 구하기
+- `square` : 제곱
+- GradientDescent는 다음번 포스트에서 설명, 우선은 cost의 최소값을 찾아내 준다고 생각
 
 ### 2. Run & Udapte graph an get resluts
 ~~~python
@@ -100,7 +102,7 @@ sess = tf.Session()
 #variables에 관한 초기화
 sess.run(tf.global_variables_initializer())
 ~~~
-- global_variables_initalizer() : Variable를 실행시키기 위한 초기화(꼭 해주어야 함)
+- `global_variables_initalizer()` : `Variable`를 실행시키기 위한 초기화(꼭 해주어야 함)
 
 ~~~python
 for step in range(2001):
@@ -130,8 +132,9 @@ for step in range(2001):
 - cost 값은 계속 줄어들고, W는 1에 가까워 지고 b는 0에 가까워 진다.(h(x) = 1*x+0)
 - 즉 우리가 구하고자 한 y = x 에 가까워 진다.
 
-
+---
 # 2. PlaceHolder로 구현
+---
 ## 1. 전체 코드
 ~~~python
 import tensorflow as tf
@@ -176,7 +179,7 @@ import tensorflow as tf
 x_train = tf.placeholder(tf.float32)
 y_train = tf.placeholder(tf.float32)
 ~~~
-- placeholder로 입력값 형식은 float32비트로 선언
+- `placeholder`로 입력값 형식은 float32비트로 선언
 
 ### 2. Run & Udapte graph an get resluts
 ~~~python
@@ -199,7 +202,7 @@ print(sess.run(hypothesis, feed_dict= {x_train:[1,2,3,4,5]}))
 [362.63654]
 [1.0033951 2.0007286 2.9980621 3.9953957 4.992729 ]
 ~~~
-- y=x에 매우 가까운 결과값을 보여준다 # 텐서플로우 임포트 후 tf로 정의
+- y=x에 매우 가까운 결과값을 보여준다
 
 
 
