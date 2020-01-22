@@ -52,6 +52,7 @@ last_modified_at: 2020-01-18
 - 구조
   - Rank
     - TensorFlow에서는 tesnor는 rank라는 차원 단위로 표현
+    - '몇 차원의 배열'이라고 생각하면 됨
 
     Rank | Math Enitiy | Python Example
     -----|---------|--------
@@ -61,18 +62,18 @@ last_modified_at: 2020-01-18
     3 | 3-Tensor(cube if numbers) | t = [[[2],[4],[6]], [[8],[10],[12]], [[14],[16], [18]]]
     n | n-Tensor(you get the idea) | ...
 
-    - rank2인 tensor는 행렬, rank1인 tensor는 벡터로 보면 된다.
-    - rank2인 tensor는 t[i,j] 형식으로 원소에 접근 가능하다
-    - rank3인 tensor는 t[i,j,k] 형식으로 원소를 지정할 수 있다.
+    - Rank2인 tensor는 행렬, rank1인 tensor는 벡터를 의미한다.
+    - Rank2인 tensor는 Shape[i,j] 형식으로 원소에 접근 가능하다.
+    - Rank3인 tensor는 Shape[i,j,k] 형식으로 원소를 지정할 수 있다.
     
     ~~~bash
-    t = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    Shape = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     ~~~
-    - 위의 예제 같은 경우 rank2에 속하고, t[3,3]으로 표현 가능하다.
+    - 위의 예제 같은 경우 rank2에 속하고, Shape[3,3]으로 표현 가능하다.
 
   - Shape
-    - Tesnfor 차원을 표현할 때 세가지 기호를 사용
-
+    - 특정 배열의 생김새, 즉 몇개의 요소가 있는지를 보여준다
+    
     Rank | Shape | Dimension number | Python Example
     -----|-------|--------|------
     0 | [] | 0-D | A 0-D tensor A scalar
@@ -81,8 +82,29 @@ last_modified_at: 2020-01-18
     3 | [D0, D1, D2] | 3-D | A 2-D tensor shape[1, 3, 4]
     n | [D0, D1, ... , Dn-1] | n-D | A tensor with shape [D0, D1,...,Dn-1]
     
+    - Shape[7]일 경우
+      ~~~bash
+      t = [1, 4, 5, 6, 6, 7, 7] # 요소가 7개
+      ~~~
+    
+    - Shape[2, 3]일 경우
+      ~~~bash
+      t = [[1, 2, 3], [4, 5, 6]] # 2*3인 행렬
+      ~~~
+
+    - Shape[5, 4, 2]일 경우
+      ~~~bash
+      t = [[[2,4]], [2,4], [2,4], [2,4]],
+           [[2,4]], [2,4], [2,4], [2,4]],
+           [[2,4]], [2,4], [2,4], [2,4]],
+           [[2,4]], [2,4], [2,4], [2,4]],
+           [[2,4]], [2,4], [2,4], [2,4]]]
+      ~~~
+    - Shape[D0, D1, ... , Dn-1]일때 Dn-1이 가장 맨 안쪽 값이라고 생각하면 됨 
+
+
   - Data types
-    - Tensor는 차원 말고도 데이터 타입도 갖는다.
+    - Tensor가 담을 수 있는 데이터 타입을 의미
 
     Data type | Python tpye | Description
     -----|---------|--------
@@ -110,6 +132,10 @@ last_modified_at: 2020-01-18
 ### 2.Execution Phase(실행단계)
   - Session을 이용해 그래프의 op 실행
   - Session은 그래프의 op를 CPU나 GPU같은 디바이스에 배정 및 실행을 위해 메서드 제공
+
+### 3.Update & Return(출력단계)
+  - 그래프 내부 변수들을 업데이트하고 출력값을 리턴
+  - 2번과정과 같이 반복적으로 학습하여 내부 변수값들을 갱신
 
 ---
 
