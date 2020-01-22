@@ -43,7 +43,7 @@ last_modified_at: 2020-01-17
       3 | 50
       2 | 30
   
-    위의 테이블을 통해 다른 시간일 때 점수 예상 가능(7시간 공부 하면 75점 정도로 예측)
+      위의 테이블을 통해 다른 시간일 때 점수 예상 가능(7시간 공부 하면 75점 정도로 예측)
   - Binary Classification : 두가지의 경우로 정답을 분류하는 방법
   
   예) Pass or Non-pass based on time spent
