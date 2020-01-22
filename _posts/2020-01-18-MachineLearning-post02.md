@@ -51,7 +51,7 @@ last_modified_at: 2020-01-18
 - 내부적으로 모든 데이터는 텐서를 통해 표현. 텐서는 일종의 다차원 배열로 그래프 내의 오퍼레이션 간에는 텐서만이 전달. *즉 모든것은 Tensor만으로 전달 및 사용*
 - 구조
   - Rank
-    - TensorFlow에서는 tesnor는 rank라는 차원 단위로 표현
+    - TensorFlow에서 tesnor는 rank라는 차원 단위로 표현
     - '몇 차원의 배열'이라고 생각하면 됨
 
     Rank | Math Enitiy | Python Example
@@ -62,7 +62,7 @@ last_modified_at: 2020-01-18
     3 | 3-Tensor(cube if numbers) | t = [[[2],[4],[6]], [[8],[10],[12]], [[14],[16], [18]]]
     n | n-Tensor(you get the idea) | ...
 
-    - Rank2인 tensor는 행렬, rank1인 tensor는 벡터를 의미한다.
+    - Rank2인 tensor는 행렬, Rank1인 tensor는 벡터를 의미한다.
     - Rank2인 tensor는 Shape[i,j] 형식으로 원소에 접근 가능하다.
     - Rank3인 tensor는 Shape[i,j,k] 형식으로 원소를 지정할 수 있다.
     
