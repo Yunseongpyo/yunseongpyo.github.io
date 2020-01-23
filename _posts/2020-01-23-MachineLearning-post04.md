@@ -69,7 +69,7 @@ train = optimizer.minimize(cost)
   - 최소값 기준 왼쪽 경사일 경우 : 음수
   - 즉 최소값을 다가가기 위해 그래프상으로 감소함으로 빼준다.
 - 기존 Cost(W)에서 m대신 2m을 대입한 이유는 미분시 공식 단순화 하기 위함이다
-  (우리는 Cost(W)의 최소값을 구하기 위해 W아 b를 찾는게 목적이다. 그래서 W와 b가 계산이 끝난 뒤 m값이 적용이 되기 때문에 2m으로 바꾸어도 Cost(w)의 최소값을 구하는 데는 영향이 없다)
+  (우리는 Cost(W)의 최소값을 구하기 위해 W와 b를 찾는게 목적이다. 그래서 W와 b가 계산이 끝난 뒤 m값이 적용이 되기 때문에 2m으로 바꾸어도 Cost(w)의 최소값을 구하는 데 영향이 없다)
 
 ![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true)
 - 미분화 과정
@@ -81,7 +81,7 @@ train = optimizer.minimize(cost)
 ![Cost09](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
 - 위의 사진 처럼 CostFunction을 구하면 Gradient Descent 알고리즘을 사용하기 힘들다
 
-![Cost10](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
+![Cost10](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction03.jpg?raw=true)
 - 그림 처럼 위에서 사용했던 CostFunction을 사용하면 밥그릇 형태로 그래프가 그려진다
 - 이러한 형태 면 어느 지점이든지 최소값을 구할 수 있다
 - 이러한 형태를 ConvexFunction이라고 한다.
