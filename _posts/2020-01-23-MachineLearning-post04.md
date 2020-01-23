@@ -27,21 +27,23 @@ train = optimizer.minimize(cost)
 ---
 
 # 1. Hypothesis 간결화
-![Cost01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost01.jpg?raw=true)
-![Cost02](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost02.jpg?raw=true)
+![Cost01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost01.jpg?raw=true){: width="500" height="500"}
+![Cost02](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost02.jpg?raw=true){: width="500" height="500"}
 
 - b의 값(그래프 상으로는 y축의 절편값)을 없애 공식을 간편화 시킨다.
 - 현재는 공식을 간폅게 만들기 위해 없애지만 실제로 W의 갯수가 많아지면, b를 행렬에 넣어 공식을 간단하게 만든다.
 
+---
 # 2. CostFunction의 모양
 ![Cost03](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost03.jpg?raw=true)
 
 - 주어진 데이터(X,Y)에 W(0, 1, 2)일때의 값을 넣어 cost(W)를 값을 구해본다.
 - cost(0) = 4.67, cost(1) = 0, cost(2) = 4.67의 값이 나온다.
-- 이런식으로 계산값을 그래프화 시키면 아래의 그래프 처럼 이차함수 그래프가 나온다.
+- 이런식으로 계산값을 그래프화 시키면 아래처럼 이차함수 그래프가 나온다.
 ![Cost04](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph.jpg?raw=true)
-- W: X축, Cost(W) : Y축
+  - W: X축, Cost(W) : Y축
 
+---
 # 3. Cost의 최소값 구하기
 ## 1. Gradient Descent 알고리즘 원리
 ![Cost05](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph_Add.jpg?raw=true)
@@ -69,10 +71,10 @@ train = optimizer.minimize(cost)
 - 기존 Cost(W)에서 m대신 2m을 대입한 이유는 미분시 공식 단순화 하기 위함이다
   (우리는 Cost(W)의 최소값을 구하기 위해 W아 b를 찾는게 목적이다. 그래서 W와 b가 계산이 끝난 뒤 m값이 적용이 되기 때문에 2m으로 바꾸어도 Cost(w)의 최소값을 구하는 데는 영향이 없다)
 
-![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true){: width="100" height="100"}
+![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true)
 - 미분화 과정
 
-![Cost08](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true){: width="100" height="100"}
+![Cost08](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true)
 - 최종 공식
 
 ## 3. Gradient Descent 알고리즘 사용시 주의 사항
