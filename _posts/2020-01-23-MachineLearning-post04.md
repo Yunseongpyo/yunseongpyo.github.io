@@ -27,24 +27,24 @@ train = optimizer.minimize(cost)
 ---
 
 # 1. Hypothesis 간결화
-![Cost01]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost01.jpg?raw=true)
+![Cost01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost01.jpg?raw=true)
 ![Cost02](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost02.jpg?raw=true)
 
 - b의 값(그래프 상으로는 y축의 절편값)을 없애 공식을 간편화 시킨다.
 - 현재는 공식을 간폅게 만들기 위해 없애지만 실제로 W의 갯수가 많아지면, b를 행렬에 넣어 공식을 간단하게 만든다.
 
 # 2. CostFunction의 모양
-![Cost03]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost03.jpg?raw=true)
+![Cost03](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost03.jpg?raw=true)
 
 - 주어진 데이터(X,Y)에 W(0, 1, 2)일때의 값을 넣어 cost(W)를 값을 구해본다.
 - cost(0) = 4.67, cost(1) = 0, cost(2) = 4.67의 값이 나온다.
 - 이런식으로 계산값을 그래프화 시키면 아래의 그래프 처럼 이차함수 그래프가 나온다.
-![Cost04]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph.jpg?raw=true)
+![Cost04](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph.jpg?raw=true)
 - W: X축, Cost(W) : Y축
 
 # 3. Cost의 최소값 구하기
 ## 1. Gradient Descent 알고리즘 원리
-![Cost05]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph_Add.jpg?raw=true)
+![Cost05](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/CostGraph_Add.jpg?raw=true)
 
 - Gradient Descent는 말그대로 경사를 따라 내려가는 알고리즘이다
 - 위의 그래프를 보면 Cost의 최소값(별표)은 0이고 이를 구하기 위해 W와 b를 찾는게 목적이다.
@@ -58,7 +58,7 @@ train = optimizer.minimize(cost)
   4. 변수가 여려개일 경우데도 적용 가능
 
 ## 2. Gradient Descent 알고리즘 공식화
-![Cost06]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost05-01.jpg?raw=true)
+![Cost06](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost05-01.jpg?raw=true)
 - Cost(W)를 미분하여 어떤 방향으로 변화할지 기울기를 구한다.
 - 구한 미분값을 α값(learning_rate)를 곱해 현재 W에 빼면 다음 번 W의 위치를 구할 수있다.
   (α값이 너무 크면 구한 값이 부정확할 수 있고, α값이 너무 작으면 학습 시간이 오래걸린다. 그래서 적당한 α값을 구해야 한다)
@@ -69,17 +69,17 @@ train = optimizer.minimize(cost)
 - 기존 Cost(W)에서 m대신 2m을 대입한 이유는 미분시 공식 단순화 하기 위함이다
   (우리는 Cost(W)의 최소값을 구하기 위해 W아 b를 찾는게 목적이다. 그래서 W와 b가 계산이 끝난 뒤 m값이 적용이 되기 때문에 2m으로 바꾸어도 Cost(w)의 최소값을 구하는 데는 영향이 없다)
 
-![Cost07]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true)
+![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true)
 - 미분화 과정
 
-![Cost08]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true)
+![Cost08](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true)
 - 최종 공식
 
 ## 3. Gradient Descent 알고리즘 사용시 주의 사항
-![Cost09]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
+![Cost09](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
 - 위의 사진 처럼 CostFunction을 구하면 Gradient Descent 알고리즘을 사용하기 힘들다
 
-![Cost10]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
+![Cost10](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Convexfunction01.jpg?raw=true)
 - 그림 처럼 위에서 사용했던 CostFunction을 사용하면 밥그릇 형태로 그래프가 그려진다
 - 이러한 형태 면 어느 지점이든지 최소값을 구할 수 있다
 - 이러한 형태를 ConvexFunction이라고 한다.
