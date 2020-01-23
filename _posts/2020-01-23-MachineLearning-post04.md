@@ -69,10 +69,10 @@ train = optimizer.minimize(cost)
 - 기존 Cost(W)에서 m대신 2m을 대입한 이유는 미분시 공식 단순화 하기 위함이다
   (우리는 Cost(W)의 최소값을 구하기 위해 W아 b를 찾는게 목적이다. 그래서 W와 b가 계산이 끝난 뒤 m값이 적용이 되기 때문에 2m으로 바꾸어도 Cost(w)의 최소값을 구하는 데는 영향이 없다)
 
-![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true)
+![Cost07](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost06.jpg?raw=true){: width="100" height="100"}
 - 미분화 과정
 
-![Cost08](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true)
+![Cost08](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/05CostMinimize/Cost07.jpg?raw=true){: width="100" height="100"}
 - 최종 공식
 
 ## 3. Gradient Descent 알고리즘 사용시 주의 사항
