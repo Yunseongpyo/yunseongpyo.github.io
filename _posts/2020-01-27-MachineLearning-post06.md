@@ -15,7 +15,7 @@ last_modified_at: 2020-01-27
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
 ---
-# Linerar Regression의 Cost 최소화를 파이썬으로 구현
+# Linerar Regression의 Cost 최소화 파이썬 구현
   1. CostFunction의 그래프화(실제 그래프로 표시) 
   1. Gradient Descent 구현
   1. `optimizer`를 이용한 Cost최소화
@@ -98,7 +98,7 @@ plt.show()
 
 
 ## 2. 결과값
-![CostFunctionGraph]](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/06CostMinimize(pythone)/Figure_2.png?raw=true){: width="500" height="500"}
+![CostFunctionGraph](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/06CostMinimize(pythone)/Figure_2.png?raw=true){: width="500" height="500"}
 - CostFunction의 그래프가 2차함수로 표현된 것을 볼수 있다.
 
 
