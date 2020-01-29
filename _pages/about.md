@@ -2,6 +2,8 @@
 title: "블로그 설명서"
 permalink: /about/
 layout: single
+toc_sticky: true
+toc_ads: true
 ---
 
 ## yunseongpyo.github.io 블로그
