@@ -60,12 +60,12 @@ last_modified_at: 2020-01-17
   
   예) Letter grade(A, B, C, E, F) based on time spent
  
-      |X(Hours) | Y(Grade)|
-      |:---:|:---:|
-      |10 | A
-      |9 | B
-      |3 | D
-      |2 | F
+|X(Hours) | Y(Grade)|
+|:---:|:---:|
+|10 | A
+|9 | B
+|3 | D
+|2 | F
 
 ## 2. Unsupervised Learning(비지도학습)
 - 정답인 데이터를 제공하지 않고 오로지 주어진 데이터를 분류만 함
