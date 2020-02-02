@@ -31,7 +31,7 @@ last_modified_at: 2019-12-19
 
 - TrackableType의 종류   
 TrackableType.PlaneWithinPolygon(지정된 평면 모양대로) < TrackableType.PlaneWithinBounds(지정된 평면모양기준으로 직사각형) 
-< TrackableType.PlaneEstimated(불분명한 경계) < TrackableType.PlaneWithinInfinity(지정된 면으로부터 끝이없는 경계선)
+< TrackableType.PlaneEstimated(불분명한 경계) < TrackableType.PlaneWithinInfinity(지정된 면으로부터 끝이없는 경계선, 안드로이드에서는작동이 안됨)
 
 - ARplane 타입 종류  
 ARPlane a;  
