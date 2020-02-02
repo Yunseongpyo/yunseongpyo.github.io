@@ -14,7 +14,7 @@ last_modified_at: 2020-01-17
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
 
-# 1. 머신러닝이란?
+# 1. 머신러닝이란???
 > "Field of study that gives computers the ability to learn  
    without being explicitly programmed”   
                                    - Arthur Samuel (1959) -
