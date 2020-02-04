@@ -1,5 +1,5 @@
 ---
-title:  "MachineLearning - 07. Multivariable linear Regression"
+title:  "MachineLearning - 07. Multivariable Linear Regression"
 excerpt: "MachineLearning 정리."
 
 toc: true
@@ -14,11 +14,9 @@ last_modified_at: 2020-02-04
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
 
 ---
-# Linerar Regression의 Cost 최소화 파이썬 구현
+# 0. Multivariable Linear Regression
 - 받는 값이 여러가지 경우 단순하게 생각하자
-- 기존 예측 공식에 여러가지 값을 대입하면 된다.
 - Matrix multiplication 활용
-- 보통 H(X) = XW(X를 앞으로 쓴다,대문자느 매트릭스 표현)
 
 ---
 
