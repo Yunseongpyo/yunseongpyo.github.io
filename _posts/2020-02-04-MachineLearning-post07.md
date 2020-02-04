@@ -49,7 +49,7 @@ last_modified_at: 2020-02-04
 
 ![formula02](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/08Multi_variableFeatrue/formula02.png?raw=true)
 - CostFunction또한 x값이 늘어남에 따라 위의 공식처럼 표현한다.
-- Hypothesis값의 입력값이 늘어난거 뿐이기 때문에 CostFuncton은 신경쓸게 없다
+- Hypothesis 입력값이 늘어난거 뿐이기 때문에 CostFuncton은 신경쓸게 없다
 
 ![formula03](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/08Multi_variableFeatrue/formula03.png?raw=true)
 - 첫번째 Hypothesis : x의 갯수가 3개 일때
@@ -60,7 +60,7 @@ last_modified_at: 2020-02-04
 
 ![matrix01](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/08Multi_variableFeatrue/MatrixMultiplication02.PNG?raw=true)
 - 위처럼 Hypothesis 수식을 행렬로 표현할 수 있다.(우선 b의 값은 생략)
-- `H(x) = wx`에서 `H(X) = XW`로 바뀌었지만, 곱셉이기 때문에 x와 w의 순서는 상관 없다
+- `H(x) = wx`에서 `H(X) = XW`로 바뀌었지만, 곱셈이기 때문에 x와 w의 순서는 상관 없다
 - 매트릭스는 보통 대문자로 표현하기 때문에 수식은 `H(X) = XW`로 표현
 
 ## 1. 계산 방법
