@@ -139,7 +139,7 @@ for step in range(2001):
 - 2000번 학습 시키고 10번마다 cost와 hypothesisr값 출력
 - train에 필요한 x값들과 y값 넣어주기
 
-## 2. 결과값
+## 3. 결과값
 ~~~bash
 0 Cost : 85044.164 
 Prediction:
@@ -255,7 +255,8 @@ for step in range(2001):
 
 ~~~
 - X에 x_data, Y에 y_data 매트릭스 넣기
-## 2. 결과값
+
+## 3. 결과값
 ~~~bash
 0 Cost : 183810.95 
 Prediction:
