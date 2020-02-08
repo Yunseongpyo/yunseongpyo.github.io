@@ -97,7 +97,7 @@ plt.show()
 - `plt.show()` : 그래프 출력
 
 
-## 2. 결과값
+## 3. 결과값
 ![CostFunctionGraph](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/06CostMinimize(pythone)/Figure_2.png?raw=true){: width="500" height="500"}
 - CostFunction의 그래프가 2차함수로 표현된 것을 볼수 있다.
 
@@ -173,7 +173,7 @@ for step in range(21):
 - 스텝별로 cost값, w값 출력 
 
 
-## 2. 결과값
+## 3. 결과값
 ~~~bash
 0 7.4831824 [0.26889604]
 1 2.1285498 [0.61007786]
