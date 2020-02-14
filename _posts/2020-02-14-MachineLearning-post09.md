@@ -94,6 +94,7 @@ print d              # 출력 "[[ 1.  0.]
 e = np.random.random((2,2)) # 임의의 값으로 채워진 배열 생성
 print e                     # 임의의 값 출력 "[[ 0.91940167  0.08143941]
                             #                  [ 0.68744134  0.87236687]]"
+
 ~~~
 
 - 더 자세한 내용 : [Numpy](http://aikorea.org/cs231n/python-numpy-tutorial/#numpy)
@@ -144,7 +145,7 @@ print(sess.run(hypothesis, feed_dict={X: [[100,47,101], [90,35,125]]}))
 ~~~
 
 - data_01.csv 내용
-~~~ bash
+~~~bash
 #EXAM1	EXAM2	EXAM3	Fianl
 73,	80,	75,	152
 93,	88,	93,	185
