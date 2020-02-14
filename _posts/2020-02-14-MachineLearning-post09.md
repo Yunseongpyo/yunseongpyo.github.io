@@ -244,6 +244,6 @@ Prediction:
 ~~~
 
 
-참고사이트[출처](http://aikorea.org/cs231n/python-numpy-tutorial/)
+참고사이트 : [출처](http://aikorea.org/cs231n/python-numpy-tutorial/)
 
 마지막으로 수정된 시간은 {{ page.last_modified_at }}이다.
