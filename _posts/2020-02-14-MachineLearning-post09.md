@@ -1,8 +1,8 @@
 ---
 title:  "MachineLearning - 09. TensorFlow로 파일 데이터 로드(Python)"
 excerpt: "MachineLearning 정리."
-toc: true
-toc_sticky: true
+# toc: true
+# toc_sticky: true
 categories:
   - MachineLearning
 tags:
