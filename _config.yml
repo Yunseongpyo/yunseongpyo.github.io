@@ -290,7 +290,6 @@ defaults:
       comments: true
       share: true
       related: true
-      #sidebar광고추가
       toc_ads: true
       toc_sticky: true
 
