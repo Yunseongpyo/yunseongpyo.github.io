@@ -252,7 +252,7 @@ train = optimizer.minimize(cost)
 - 텐서플로우의 `GradientDescentOptimizer`로 미적분 계산
 - `minimize`를 이용해 optimizer에서 경사도를 계산해 변수에 적용해 최소비용 찾아준다
 
-## 2. 결과값
+## 3. 결과값
 ~~~bash
 0 5.0
 1 1.2666664

@@ -8,7 +8,6 @@ categories:
 tags:
   - MachineLearning
   - Python
-  - Numpy
 last_modified_at: 2020-02-14
 ---
 모두를 위한 머신러닝/딥러닝 강의 기반으로 공부한 내용입니다.
