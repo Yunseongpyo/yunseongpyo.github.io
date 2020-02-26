@@ -14,7 +14,7 @@ last_modified_at: 2020-02-26
 ---
 # 1. Logistic Classification
 
-## 1. Logistic Classification이란?
+## 1. Logistic Classification 이란?
 - Classification의 사전적 의미 : 분류
 - Linear Regression을 활용해 데이터를 분류 하는 모델
 - 분류에서 가장 단순한 모델로 2가지 중 하나를 찾음(Binary)
@@ -30,6 +30,7 @@ last_modified_at: 2020-02-26
 
 ## 3. 기존 Linear Regression 사용시 문제점
 1. 기울기 문제
+
   ![Linear RegressionProblem](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/10.LogisticClassification/LinearRegressionProblem.jpg?raw=true)
   - Linear Regression는 초과되는 새로운 데이터 발생시 기울기 변화가 생김
   - 즉 학습된 모델(기울기)로 예측이 실패 하기 때문에 다시 학습해야 되는 상황 발생
@@ -43,7 +44,7 @@ last_modified_at: 2020-02-26
   - 예측값이 0~1사이 에서만 나오는 방법
 
 ## 4. 해결책 - Sigmoid
-![sigmoid](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/10.LogisticClassification/Sigmoid02.png?raw=true)
+![sigmoid](https://github.com/Yunseongpyo/yunseongpyo.github.io/blob/master/assets/images/MachineLearning/10.LogisticClassification/Sigmoid02.png?raw=true){: width="500" height="500"}
 - Sigmod함수는 X축 값이 어떤 값이든 Y값은 0~1사이에서만 나온다
 - g(z)로 표현
 
